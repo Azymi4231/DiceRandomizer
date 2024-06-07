@@ -30,7 +30,7 @@ class _CoffeRollerState extends State<CoffeRoller> {
       children: [
         Image.asset(
           activeCoffeImagine,
-          width: 200,
+          width: 201,
         ),
         const SizedBox(height: 50),
         TextButton(
