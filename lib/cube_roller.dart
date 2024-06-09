@@ -4,22 +4,22 @@ import 'package:flutter/material.dart';
 
 final randomizer = Random();
 
-class CoffeRoller extends StatefulWidget {
-  const CoffeRoller({super.key});
+class CubeRoller extends StatefulWidget {
+  const CubeRoller({super.key});
 
   @override
-  State<CoffeRoller> createState() {
-    return _CoffeRollerState();
+  State<CubeRoller> createState() {
+    return _CubeRollerState();
   }
 }
 
-class _CoffeRollerState extends State<CoffeRoller> {
-  var activeCoffeImagine = 'assets/dice-images/dice-1.png';
+class _CubeRollerState extends State<CubeRoller> {
+  var activeCubeImagine = 'assets/dice-images/dice-1.png';
 
   void rollDice() {
-    var coffeRoll = randomizer.nextInt(6) + 1;
+    var cubeRoll = randomizer.nextInt(6) + 1;
     setState(() {
-      activeCoffeImagine = 'assets/dice-images/dice-$coffeRoll.png';
+      activeCubeImagine = 'assets/dice-images/dice-$cubeRoll.png';
     });
   }
 
@@ -29,7 +29,7 @@ class _CoffeRollerState extends State<CoffeRoller> {
       mainAxisSize: MainAxisSize.min,
       children: [
         Image.asset(
-          activeCoffeImagine,
+          activeCubeImagine,
           width: 201,
         ),
         const SizedBox(height: 50),

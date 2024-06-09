@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:first_app/coffe_roller.dart';
+import 'package:first_app/cube_roller.dart';
 
 const startAligment = Alignment.topLeft;
 const endAligment = Alignment.bottomRight;
@@ -17,7 +17,7 @@ class GradientContainer extends StatelessWidget {
               colors: colors, begin: startAligment, end: endAligment),
         ),
         child: const Center(
-          child: CoffeRoller(),
+          child: CubeRoller(),
         ));
   }
 }
